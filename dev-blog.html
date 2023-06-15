@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Blog</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    /* Other styles go here */
+
+    #intro {
+      margin-top: 20px;
+      background-color: var(--dark-color);
+      padding: 20px;
+      border-radius: 8px;
+      color: var(--light-color);
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    #intro h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: var(--secondary-color);
+    }
+
+    #intro p {
+      font-size: 1em;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Dev Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="intro">
+        <div class="container">
+          <h2>Welcome to My Dev Blog</h2>
+          <p>Welcome! I'm excited to share the journey of developing FZ3, a game that I've poured my heart and soul into. Here, you'll get a glimpse into my thought processes, struggles, and victories, giving you a sense of what it's really like to be in the shoes of a game developer.</p>
+          <p>This blog serves as a space to track and share my progress, reflect on lessons learned, and articulate future plans. I believe that transparency in the development process not only fosters a stronger connection with potential players, but also invites valuable insights from the community. So, feel free to join me on this exciting journey, and together, let's bring FZ3 to life!</p>
+        </div>  
+      </section>
+      
+ 
+    <section id="blog-entry-1">
+      <div class="container">
+        <h2>June 15th, 2023</h2>
+        <p>Last night, I decided to re-engage with the development of FZ3 (still looking for the perfect name) around 8 PM. Having stepped away from the project for several months, the act of booting up the game was nostalgic and revitalizing. However, my excitement was quickly tempered by the realization of the immense work awaiting me.</p>
+        <p>Looking back at the initial version of Friendzoned, prior to its makeover, I recognize a major oversight: we had baked all the platforms directly into the game. The map creation and design took place in Paint.NET, after which the entire map was transferred into the game. Box colliders were then layered on top of the static images. This method led to a multitude of problems, not least of which was the varying size of the maps. This inconsistency resulted in the player character seeming smaller or larger depending on the map, causing a disjointed player experience. Correcting this size discrepancy was one of the first tasks I tackled in the game's revised version.</p>
+        <p>An idea to make the game a roguelike spurred the need for randomly generated levels. Starting with the backgrounds, I managed to implement successful randomization. The real challenge emerged when trying to apply the same random generation to the platforms. The requirements were clear: the platforms could not be touching and there had to be ample space for the character to move around the map efficiently. The aim was to create a gameplay loop that allowed the player to maintain a flow-like state, a crucial element for the game that FZ3 aspires to be.</p>
+        <p>Creating a platform system that fit these parameters proved to be a tough but not insurmountable task. After a few days of grappling with it, and around 20 hours of dedicated work, I crafted something that I was truly content with.</p>
+        <p>Next up was the rope. Since everything was baked into the map in the original version, the rope mechanic had to be completely revised. Despite my efforts, I struggled to get the rope to function as I envisioned, which led to a decrease in motivation. Consequently, this is where I paused development.</p>
+        <p>Fast forward to now. Upon returning to the game, the first thing I noticed was the still-unresolved rope issue. I invested about 6-7 hours attempting to rectify it, but without success. Exhausted, I called it a day around 4 AM. Waking up this morning, I set a new goal - to migrate my project to GitHub in order to better track my progress. Initially, we were using PlasticSCM on Unity, but I decided to switch to Git, which, frankly, was a challenging transition. After grappling with multiple technical difficulties and distractions for a few hours, I finally succeeded in the migration.</p>
+        <p>As I move forward, my plan is to prioritize my tasks better and document my development process consistently. While multitasking between development and research last night, a few ideas sparked in my mind, which I think are worth mentioning:</p>
+        <ul>
+          <li>I feel a pressing need to overhaul the entire UI as its current state doesn't satisfy me.</li>
+          <li>Deciding on whether to include an inventory system is crucial, and if I choose to include one, a host of related decisions will follow.</li>
+          <li>Improving player feedback is something I'm keen on enhancing.</li>
+        </ul>
+        
+    </section>
+
+    <!-- More blog entries go here -->
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© Dante Lenarduzzi 2023</p>
+    </div>
+  </footer>
+
+  <script src="uniqueFeature.js"></script>
+</body>
+
+</html>
