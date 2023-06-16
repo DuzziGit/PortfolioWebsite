@@ -54,27 +54,44 @@
         </div>  
       </section>
       
- 
-    <section id="blog-entry-1">
-      <div class="container">
-        <h2>June 15th, 2023</h2>
-        <p>Last night, I decided to re-engage with the development of FZ3 (still looking for the perfect name) around 8 PM. Having stepped away from the project for several months, the act of booting up the game was nostalgic and revitalizing. However, my excitement was quickly tempered by the realization of the immense work awaiting me.</p>
-        <p>Looking back at the initial version of Friendzoned, prior to its makeover, I recognize a major oversight: we had baked all the platforms directly into the game. The map creation and design took place in Paint.NET, after which the entire map was transferred into the game. Box colliders were then layered on top of the static images. This method led to a multitude of problems, not least of which was the varying size of the maps. This inconsistency resulted in the player character seeming smaller or larger depending on the map, causing a disjointed player experience. Correcting this size discrepancy was one of the first tasks I tackled in the game's revised version.</p>
-        <p>An idea to make the game a roguelike spurred the need for randomly generated levels. Starting with the backgrounds, I managed to implement successful randomization. The real challenge emerged when trying to apply the same random generation to the platforms. The requirements were clear: the platforms could not be touching and there had to be ample space for the character to move around the map efficiently. The aim was to create a gameplay loop that allowed the player to maintain a flow-like state, a crucial element for the game that FZ3 aspires to be.</p>
-        <p>Creating a platform system that fit these parameters proved to be a tough but not insurmountable task. After a few days of grappling with it, and around 20 hours of dedicated work, I crafted something that I was truly content with.</p>
-        <p>Next up was the rope. Since everything was baked into the map in the original version, the rope mechanic had to be completely revised. Despite my efforts, I struggled to get the rope to function as I envisioned, which led to a decrease in motivation. Consequently, this is where I paused development.</p>
-        <p>Fast forward to now. Upon returning to the game, the first thing I noticed was the still-unresolved rope issue. I invested about 6-7 hours attempting to rectify it, but without success. Exhausted, I called it a day around 4 AM. Waking up this morning, I set a new goal - to migrate my project to GitHub in order to better track my progress. Initially, we were using PlasticSCM on Unity, but I decided to switch to Git, which, frankly, was a challenging transition. After grappling with multiple technical difficulties and distractions for a few hours, I finally succeeded in the migration.</p>
-        <p>As I move forward, my plan is to prioritize my tasks better and document my development process consistently. While multitasking between development and research last night, a few ideas sparked in my mind, which I think are worth mentioning:</p>
-        <ul>
-          <li>I feel a pressing need to overhaul the entire UI as its current state doesn't satisfy me.</li>
-          <li>Deciding on whether to include an inventory system is crucial, and if I choose to include one, a host of related decisions will follow.</li>
-          <li>Improving player feedback is something I'm keen on enhancing.</li>
-        </ul>
-        
-    </section>
 
-    <!-- More blog entries go here -->
-  </main>
+      <section id="blog-entry-1">
+        <div class="container">
+          <h2>June 15th, 2023</h2>
+          <p>Last night, the call of FZ3 (a temporary moniker until the perfect name emerges) lured me back into its development around 8 PM. After a hiatus that spanned several months, the act of booting up the game was akin to a warm, nostalgic embrace. However, the accompanying rush of excitement was soon balanced by the acknowledgement of the colossal work lying ahead.</p>
+          <p>As I reviewed the initial version of Friendzoned, I couldn't help but notice a glaring oversight: our decision to bake all the <span class="highlight">platforms</span> directly into the game. The map creation was birthed in Paint.NET, and the entire map was then ported into the game with box colliders layered over static images. This approach spawned a slew of issues, a key concern being the varying sizes of the maps. This inconsistency skewed the player's perspective, with their character appearing to fluctuate in size based on the map - a discordant player experience. Rectifying this size discrepancy was one of the primary challenges addressed in the game's revised version.</p>
+          <p>A leap of creativity to transform the game into a <span class="highlight">roguelike</span> led to the necessity of <span class="highlight">randomly generated levels</span>. After successfully randomizing the backgrounds, the real trial surfaced when applying the same generation to the platforms. The platforms needed to maintain distance from each other, ensuring ample space for the character to navigate efficiently. The aim was clear: craft a gameplay loop that enables a flow-like state for the player - a critical piece in the FZ3 puzzle.</p>
+          <p>Designing a platform system that adhered to these requirements was daunting yet conquerable. After wrestling with the task for a few days and dedicating around 20 hours, I found myself gazing at something that truly satiated my developer appetite.</p>
+          <p>The rope, a relic from the original version where everything was baked into the map, was next in line for an overhaul. Despite earnest efforts, the rope refused to perform as envisioned, leading to a dip in motivation and marking a pause in development.</p>
+          <p>Fast forward to the present. My reunion with the game was greeted by the unresolved <span class="highlight">rope issue</span>. Around 6-7 hours were spent in an unsuccessful attempt to tame it, leading to a much-needed break around 4 AM. Upon waking, I set a new objective - to transition my project to <span class="highlight">GitHub</span> for better progress tracking. Despite a rocky departure from PlasticSCM on Unity to Git, and a few hours wrestling with technical difficulties and distractions, I emerged victorious in the migration.</p>
+          <p>Looking ahead, I intend to prioritize my tasks more effectively and maintain a consistent record of my development process. Juggling between development and research last night sparked a few ideas that are worthy of mention:</p>
+          <ul>
+            <li>An urge to revamp the entire <span class="highlight">UI</span> - its current state is far from satisfying.</li>
+            <li>The inclusion of an <span class="highlight">inventory system</span> hangs in the balance, and should I decide in its favor, a flurry of related decisions will ensue.</li>
+            <li>Enhancing <span class="highlight">player feedback</span> is a goal I'm keenly pursuing.</li>
+          </ul>       
+      </section>
+
+
+      <section id="blog-entry-2">
+        <div class="container">
+          <h2>June 16th, 2023</h2>
+          <p>This morning, I managed to squeeze in a few hours of development time, dedicated primarily to the ladder mechanism. After some tinkering, I finally got it to function as intended. While I do plan to refine it further down the line, I'm satisfied with the current outcome. The player can now bypass the rope without attaching to it until the up arrow key is pressed or held. They can also freely jump off or move up and down the rope, enhancing the sense of control during gameplay.</p>
+          <p>In this game development journey, my primary focus has always been on ensuring a seamless player experience. The feeling of control is paramount - there are very few instances where I'd prefer the game to dictate the player's actions. This is why the smooth functioning of these <span class="highlight">ropes</span> is of utmost importance to me.</p>
+          <p>Last night was spent immersed in research on the game's UI/UX, a challenge that still has me grappling. The user interface is expected to display key elements such as Health, Level, Experience bar, and Skills (possibly four). However, striking a balance between information display and design aesthetics is a struggle.</p>
+          <p>Right now, I'm in the process of elimination, trying to identify elements from the previous UI that are no longer needed. However, my skills are more aligned with programming than art, making this conceptual design process quite challenging. Drawing inspiration from other games I've enjoyed, I'm witnessing a trend of minimalism in UI design. There seems to be a delicate balance between simplicity and functionality that I'm keen on achieving.</p>
+          <p>Alongside the UI, I'm also considering the overall <span class="highlight">theme</span> of the game. Currently, the game lacks a uniform theme, making the experience feel disjointed. Developing a coherent theme, I believe, will significantly enhance the player's immersion. </p>
+          <p>On the programming front, the next big task is to make the projectiles feel coherent again. During the transition from Friendzoned to FZ3 (a name yet to be finalized), I decided to blur the lines of class identification. I want the player's experience to be primarily determined by their choice of weapon, which will, in turn, dictate the type of projectiles used. This suggests that monsters would need to drop these weapons, adding another layer of complexity.</p>
+          <p>These are the thoughts currently buzzing in my head. Now, it's time to get back to work and bring these ideas to life.</p>
+        </div>
+      </section>
+
+
+
+
+
+
+    </main>
 
   <footer>
     <div class="container">
