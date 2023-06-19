@@ -1,0 +1,236 @@
+:root {
+  --primary-color: #111827;
+  --secondary-color: #10B981;
+  --light-color: #F9FAFB;
+  --dark-color: #1F2937;
+}
+
+[data-theme="light"] {
+  --primary-color: #F9FAFB;
+  --secondary-color: #111827;
+  --light-color: #111827;
+  --dark-color: #F9FAFB;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.start-button {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.resume-button {
+  margin-left: 20px;
+  margin-top: -8px;
+  
+}
+
+.resume-button a {
+  display: inline-block;
+  padding: 8px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #34A853; /* Change to green background color */
+  border-radius: 4px;
+    margin-right: 40px;
+
+}
+
+.resume-button a:hover {
+  background-color: #228B22; /* Change to darker green on hover */
+}
+
+.highlight {
+  color: #10B981;
+  font-weight: bold;
+}
+header {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(to right, #1F2937, #111827); /* Added gradient background */
+}
+
+header .logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2em; /* Increased size */
+  color: var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+
+nav ul li a {
+  color: var(--light-color);
+  text-decoration: none;
+  transition: color 0.3s ease; /* Added transition for smoother color change */
+}
+
+nav ul li a:hover {
+  color: var(--secondary-color);
+  text-shadow: 0 0 10px var(--secondary-color); /* Added text glow on hover */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+main {
+  margin-top: 50px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  text-align: center;
+}
+.theme-button {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .theme-button-inner {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  [data-theme="light"] .theme-button-inner {
+    transform: translateX(20px);
+  }
+
+  #odin-project-progress {
+    margin-top: 20px;
+    background-color: var(--dark-color);
+    padding: 20px;
+    border-radius: 8px;
+    color: var(--light-color);
+    margin-left: 40px;
+    margin-right: 40px;
+
+  }
+  
+  #odin-project-progress .progress-item {
+    margin-bottom: 20px;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  #odin-project-progress .progress-item h4 {
+    margin-bottom: 10px;
+    
+  }
+  
+  #odin-project-progress .progress-item p {
+    margin-bottom: 10px;
+  }
+  
+  
