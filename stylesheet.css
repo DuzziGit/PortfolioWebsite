@@ -69,26 +69,21 @@ body {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-.resume-button {
-  margin-left: 20px;
-  margin-top: -8px;
-  
+.resume-button a, a.resume-button {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #34A853; /* Change to green background color */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
-.resume-button a {
-  display: inline-block;
-  padding: 8px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #34A853; /* Change to green background color */
-  border-radius: 4px;
-    margin-right: 40px;
+    .resume-button a:hover, a.resume-button:hover {
+        background-color: #228B22; /* Change to darker green on hover */
+    }
 
-}
 
-.resume-button a:hover {
-  background-color: #228B22; /* Change to darker green on hover */
-}
 
 .highlight {
   color: #10B981;
