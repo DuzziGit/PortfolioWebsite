@@ -46,52 +46,105 @@
   </header>
 
   <main>
-    <section id="intro">
-        <div class="container">
-          <h2>Welcome to My Dev Blog</h2>
-          <p>Welcome! I'm excited to share the journey of developing FZ3, a game that I've poured my heart and soul into. Here, you'll get a glimpse into my thought processes, struggles, and victories, giving you a sense of what it's really like to be in the shoes of a game developer.</p>
-          <p>This blog serves as a space to track and share my progress, reflect on lessons learned, and articulate future plans. I believe that transparency in the development process not only fosters a stronger connection with potential players, but also invites valuable insights from the community. So, feel free to join me on this exciting journey, and together, let's bring FZ3 to life!</p>
-        </div>  
+      <section id="intro">
+          <div class="container">
+              <h2>Welcome to My Dev Blog</h2>
+              <p>Welcome! I'm excited to share the journey of developing FZ3, a game that I've poured my heart and soul into. Here, you'll get a glimpse into my thought processes, struggles, and victories, giving you a sense of what it's really like to be in the shoes of a game developer.</p>
+              <p>This blog serves as a space to track and share my progress, reflect on lessons learned, and articulate future plans. I believe that transparency in the development process not only fosters a stronger connection with potential players, but also invites valuable insights from the community. So, feel free to join me on this exciting journey, and together, let's bring FZ3 to life!</p>
+          </div>
       </section>
-      
+
 
       <section id="blog-entry-1">
-        <div class="container">
-          <h2>June 15th, 2023</h2>
-          <p>Last night, the call of FZ3 (a temporary moniker until the perfect name emerges) lured me back into its development around 8 PM. After a hiatus that spanned several months, the act of booting up the game was akin to a warm, nostalgic embrace. However, the accompanying rush of excitement was soon balanced by the acknowledgement of the colossal work lying ahead.</p>
-          <p>As I reviewed the initial version of Friendzoned, I couldn't help but notice a glaring oversight: our decision to bake all the <span class="highlight">platforms</span> directly into the game. The map creation was birthed in Paint.NET, and the entire map was then ported into the game with box colliders layered over static images. This approach spawned a slew of issues, a key concern being the varying sizes of the maps. This inconsistency skewed the player's perspective, with their character appearing to fluctuate in size based on the map - a discordant player experience. Rectifying this size discrepancy was one of the primary challenges addressed in the game's revised version.</p>
-          <p>A leap of creativity to transform the game into a <span class="highlight">roguelike</span> led to the necessity of <span class="highlight">randomly generated levels</span>. After successfully randomizing the backgrounds, the real trial surfaced when applying the same generation to the platforms. The platforms needed to maintain distance from each other, ensuring ample space for the character to navigate efficiently. The aim was clear: craft a gameplay loop that enables a flow-like state for the player - a critical piece in the FZ3 puzzle.</p>
-          <p>Designing a platform system that adhered to these requirements was daunting yet conquerable. After wrestling with the task for a few days and dedicating around 20 hours, I found myself gazing at something that truly satiated my developer appetite.</p>
-          <p>The rope, a relic from the original version where everything was baked into the map, was next in line for an overhaul. Despite earnest efforts, the rope refused to perform as envisioned, leading to a dip in motivation and marking a pause in development.</p>
-          <p>Fast forward to the present. My reunion with the game was greeted by the unresolved <span class="highlight">rope issue</span>. Around 6-7 hours were spent in an unsuccessful attempt to tame it, leading to a much-needed break around 4 AM. Upon waking, I set a new objective - to transition my project to <span class="highlight">GitHub</span> for better progress tracking. Despite a rocky departure from PlasticSCM on Unity to Git, and a few hours wrestling with technical difficulties and distractions, I emerged victorious in the migration.</p>
-          <p>Looking ahead, I intend to prioritize my tasks more effectively and maintain a consistent record of my development process. Juggling between development and research last night sparked a few ideas that are worthy of mention:</p>
-          <ul>
-            <li>An urge to revamp the entire <span class="highlight">UI</span> - its current state is far from satisfying.</li>
-            <li>The inclusion of an <span class="highlight">inventory system</span> hangs in the balance, and should I decide in its favor, a flurry of related decisions will ensue.</li>
-            <li>Enhancing <span class="highlight">player feedback</span> is a goal I'm keenly pursuing.</li>
-          </ul>       
+          <div class="container">
+              <h2>June 15th, 2023</h2>
+              <p>Last night, the call of FZ3 (a temporary moniker until the perfect name emerges) lured me back into its development around 8 PM. After a hiatus that spanned several months, the act of booting up the game was akin to a warm, nostalgic embrace. However, the accompanying rush of excitement was soon balanced by the acknowledgement of the colossal work lying ahead.</p>
+              <p>As I reviewed the initial version of Friendzoned, I couldn't help but notice a glaring oversight: our decision to bake all the <span class="highlight">platforms</span> directly into the game. The map creation was birthed in Paint.NET, and the entire map was then ported into the game with box colliders layered over static images. This approach spawned a slew of issues, a key concern being the varying sizes of the maps. This inconsistency skewed the player's perspective, with their character appearing to fluctuate in size based on the map - a discordant player experience. Rectifying this size discrepancy was one of the primary challenges addressed in the game's revised version.</p>
+              <p>A leap of creativity to transform the game into a <span class="highlight">roguelike</span> led to the necessity of <span class="highlight">randomly generated levels</span>. After successfully randomizing the backgrounds, the real trial surfaced when applying the same generation to the platforms. The platforms needed to maintain distance from each other, ensuring ample space for the character to navigate efficiently. The aim was clear: craft a gameplay loop that enables a flow-like state for the player - a critical piece in the FZ3 puzzle.</p>
+              <p>Designing a platform system that adhered to these requirements was daunting yet conquerable. After wrestling with the task for a few days and dedicating around 20 hours, I found myself gazing at something that truly satiated my developer appetite.</p>
+              <p>The rope, a relic from the original version where everything was baked into the map, was next in line for an overhaul. Despite earnest efforts, the rope refused to perform as envisioned, leading to a dip in motivation and marking a pause in development.</p>
+              <p>Fast forward to the present. My reunion with the game was greeted by the unresolved <span class="highlight">rope issue</span>. Around 6-7 hours were spent in an unsuccessful attempt to tame it, leading to a much-needed break around 4 AM. Upon waking, I set a new objective - to transition my project to <span class="highlight">GitHub</span> for better progress tracking. Despite a rocky departure from PlasticSCM on Unity to Git, and a few hours wrestling with technical difficulties and distractions, I emerged victorious in the migration.</p>
+              <p>Looking ahead, I intend to prioritize my tasks more effectively and maintain a consistent record of my development process. Juggling between development and research last night sparked a few ideas that are worthy of mention:</p>
+              <ul>
+                  <li>An urge to revamp the entire <span class="highlight">UI</span> - its current state is far from satisfying.</li>
+                  <li>The inclusion of an <span class="highlight">inventory system</span> hangs in the balance, and should I decide in its favor, a flurry of related decisions will ensue.</li>
+                  <li>Enhancing <span class="highlight">player feedback</span> is a goal I'm keenly pursuing.</li>
+              </ul>
       </section>
 
 
       <section id="blog-entry-2">
-        <div class="container">
-          <h2>June 16th, 2023</h2>
-          <p>This morning, I managed to squeeze in a few hours of development time, dedicated primarily to the ladder mechanism. After some tinkering, I finally got it to function as intended. While I do plan to refine it further down the line, I'm satisfied with the current outcome. The player can now bypass the rope without attaching to it until the up arrow key is pressed or held. They can also freely jump off or move up and down the rope, enhancing the sense of control during gameplay.</p>
-          <p>In this game development journey, my primary focus has always been on ensuring a seamless player experience. The feeling of control is paramount - there are very few instances where I'd prefer the game to dictate the player's actions. This is why the smooth functioning of these <span class="highlight">ropes</span> is of utmost importance to me.</p>
-          <p>Last night was spent immersed in research on the game's UI/UX, a challenge that still has me grappling. The user interface is expected to display key elements such as Health, Level, Experience bar, and Skills (possibly four). However, striking a balance between information display and design aesthetics is a struggle.</p>
-          <p>Right now, I'm in the process of elimination, trying to identify elements from the previous UI that are no longer needed. However, my skills are more aligned with programming than art, making this conceptual design process quite challenging. Drawing inspiration from other games I've enjoyed, I'm witnessing a trend of minimalism in UI design. There seems to be a delicate balance between simplicity and functionality that I'm keen on achieving.</p>
-          <p>Alongside the UI, I'm also considering the overall <span class="highlight">theme</span> of the game. Currently, the game lacks a uniform theme, making the experience feel disjointed. Developing a coherent theme, I believe, will significantly enhance the player's immersion. </p>
-          <p>On the programming front, the next big task is to make the projectiles feel coherent again. During the transition from Friendzoned to FZ3 (a name yet to be finalized), I decided to blur the lines of class identification. I want the player's experience to be primarily determined by their choice of weapon, which will, in turn, dictate the type of projectiles used. This suggests that monsters would need to drop these weapons, adding another layer of complexity.</p>
-          <p>These are the thoughts currently buzzing in my head. Now, it's time to get back to work and bring these ideas to life.</p>
-        </div>
+          <div class="container">
+              <h2>June 16th, 2023</h2>
+              <p>This morning, I managed to squeeze in a few hours of development time, dedicated primarily to the ladder mechanism. After some tinkering, I finally got it to function as intended. While I do plan to refine it further down the line, I'm satisfied with the current outcome. The player can now bypass the rope without attaching to it until the up arrow key is pressed or held. They can also freely jump off or move up and down the rope, enhancing the sense of control during gameplay.</p>
+              <p>In this game development journey, my primary focus has always been on ensuring a seamless player experience. The feeling of control is paramount - there are very few instances where I'd prefer the game to dictate the player's actions. This is why the smooth functioning of these <span class="highlight">ropes</span> is of utmost importance to me.</p>
+              <p>Last night was spent immersed in research on the game's UI/UX, a challenge that still has me grappling. The user interface is expected to display key elements such as Health, Level, Experience bar, and Skills (possibly four). However, striking a balance between information display and design aesthetics is a struggle.</p>
+              <p>Right now, I'm in the process of elimination, trying to identify elements from the previous UI that are no longer needed. However, my skills are more aligned with programming than art, making this conceptual design process quite challenging. Drawing inspiration from other games I've enjoyed, I'm witnessing a trend of minimalism in UI design. There seems to be a delicate balance between simplicity and functionality that I'm keen on achieving.</p>
+              <p>Alongside the UI, I'm also considering the overall <span class="highlight">theme</span> of the game. Currently, the game lacks a uniform theme, making the experience feel disjointed. Developing a coherent theme, I believe, will significantly enhance the player's immersion. </p>
+              <p>On the programming front, the next big task is to make the projectiles feel coherent again. During the transition from Friendzoned to FZ3 (a name yet to be finalized), I decided to blur the lines of class identification. I want the player's experience to be primarily determined by their choice of weapon, which will, in turn, dictate the type of projectiles used. This suggests that monsters would need to drop these weapons, adding another layer of complexity.</p>
+              <p>These are the thoughts currently buzzing in my head. Now, it's time to get back to work and bring these ideas to life.</p>
+          </div>
+      </section>
+
+
+      <section id="blog-entry-3">
+          <div class="container">
+              <h2>June 17th, 2023</h2>
+              <p>Today was an exceptionally fruitful day. The major accomplishment was sorting out the damage numbers for the game. After a fair amount of trial and error, I found a more efficient method to repetitively create them. Now, I can churn out a set in roughly 15 minutes, which is quite satisfying.</p>
+
+              <div style="display: flex; justify-content: center; margin: 20px 0;">
+                  <figure>
+                      <img src="AllMonstersAndDamageSkins.PNG" alt="Image showcasing the different monster and damage skins" style="max-width: 100%; height: auto; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); margin-bottom: 15px;">
+                      <figcaption style="text-align: center;">A sneak peek at different monster and damage skins</figcaption>
+                  </figure>
+              </div>
+
+              <p>In order to make these numbers pop, I experimented with several techniques and color palettes. The one that stood out was an orange-red gradient, which added a visually appealing touch to the game. I'll try to include some pictures in the future to showcase this improvement.</p>
+
+              <p>Next on the agenda is integrating these numbers with the damage calculation script. Once that's done, we'll be in business. Though eager to finish, I don't want to burn out, so I'll tackle this task tomorrow. Today's 7 to 8 hours of dedicated work was quite productive.</p>
+
+              <p>I must admit, I need to cultivate better habits concerning commit messages. I worked on a majority of tasks and then committed everything at the last second, which isn't ideal. So, improving commit frequency and message quality is on my self-improvement list.</p>
+
+              <p>Overall, I'm thrilled with today's progress and excited to see where tomorrow's journey takes me.</p>
+          </div>
+      </section>
+
+      <section id="blog-entry-4">
+          <div class="container">
+              <h2>June 18th, 2023</h2>
+              <p>Today was another highly productive day. I began by ensuring the damage numbers function correctly. They now move upwards and fade out, creating a visually appealing stacking effect. This allows the player to see all the damage they inflict simultaneously. Perfecting this feature took approximately three hours.</p>
+
+              <p>Next, I fleshed out the projectile script so it triggers the damage numbers. Additionally, I made a pivotal decision to have the projectiles move towards the enemies if they are in range. This design choice facilitates a smoother playstyle as it allows the player to jump and launch their projectiles freely.</p>
+
+              <p>I've also incorporated more player feedback. When the player deals damage, the enemy flashes white. This enhancement significantly elevates the game's feel from the player's perspective.</p>
+
+              <p>Today marked a significant milestone since the game's revision. For the first time, I was able to run through the level, fight mobs, and essentially play the game. With the mobs now susceptible to damage and death, the game is in a somewhat playable state. It's gratifying to see the gameplay come together in this way.</p>
+
+              <p>Looking ahead, I'm eager to continue this development trend. Over the past couple of days, I've made several small polishing changes that have collectively transformed the game into something I'm genuinely proud of. Today, I put in roughly seven hours of development, and it certainly felt like the most result-driven day yet.</p>
+
+              <p>As I foresee the next few days, I anticipate seeing swift and significant results. There are numerous minor details that, when combined, will truly tie the game together. I can't wait to resume work tomorrow and witness this transformation unfold.</p>
+          </div>
+      </section>
+
+
+      <section id="blog-entry-5">
+          <div class="container">
+              <h2>June 19th, 2023</h2>
+              <p>Today was yet another fruitful day, and the game is increasingly taking shape. A significant development today was the addition of health bars. I made the decision to display the level text right next to the health bar. Additionally, when the enemy has taken no damage, the health bar is rendered invisible, which reduces screen clutter and enhances the playing experience.</p>
+
+              <p>We also did some minor tweaking with the projectile, as there were some issues with its tracking. We managed to rectify these and enabled our bats, including a visual indicator for when a bat is hit. I'm quite pleased with these advancements.</p>
+
+              <p>Tomorrow's plan involves implementing the stats page and the leveling-up interface. I want to enable players to kill mobs, level up, and gain stats, with these stats directly affecting the player's damage output. Witnessing those numbers, feeling the progression in the game, is something I'm looking forward to.</p>
+
+              <p>Another critical task on my agenda is working on our weapon system and figuring out the implementation of various kinds of projectiles. I am also on the hunt for better sound effects for the game. The previous sound pack I purchased did not meet my expectations. While it had some decent sounds, I'm searching for that satisfying 'crunch', that jolt of dopamine a player gets when they hit an enemy or level up. Currently, the game's sound is more of a distraction than an enhancement.</p>
+
+              <p>That's about it for today. Stay tuned for more updates tomorrow!</p>
+          </div>
       </section>
 
 
 
-
-
-
-    </main>
+  </main>
 
   <footer>
     <div class="container">
